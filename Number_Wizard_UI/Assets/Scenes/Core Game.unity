@@ -298,6 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max: 1000
   min: 1
+  guessText: {fileID: 1179387762}
 --- !u!4 &677850538
 Transform:
   m_ObjectHideFlags: 0
@@ -702,8 +703,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1485848818}
-        m_MethodName: 
+      - m_Target: {fileID: 677850537}
+        m_MethodName: onPressHigher
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1366,8 +1367,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1485848818}
-        m_MethodName: 
+      - m_Target: {fileID: 677850537}
+        m_MethodName: OnPressLower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
