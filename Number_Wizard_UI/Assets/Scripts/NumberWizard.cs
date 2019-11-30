@@ -24,28 +24,26 @@ public class NumberWizard : MonoBehaviour
     // void means there is no return value. Nothing is returned
     void StartGame()
     {
-        guess = (max + min) / 2;
-        // Here we are accessing the "???" and setting it to guess, but have to convert it to a string since it is being displayed as a string in the scene.
-        guessText.text = guess.ToString();
-        max = max + 1;
+        NextGuess();
+ 
     }
 
     public void onPressHigher()
     {
-        min = guess;
-
+        min = guess + 1 ;
         NextGuess();
     }
 
     public void OnPressLower()
     {
-        max = guess;
+        max = guess - 1;
         NextGuess();
     }
     
     void NextGuess()
     {
-        guess = (max + min) / 2;
+        guess = Random.Range(min, max + 1);
+        // Here we are accessing the "???" and setting it to guess, but have to convert it to a string since it is being displayed as a string in the scene.
         guessText.text = guess.ToString();
 
     }
